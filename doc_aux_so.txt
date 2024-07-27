@@ -15,6 +15,19 @@ git clone https://github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
 --- token ---
 ghp_n4W5it3kHLClMlwX8JnNvQUHuUGiZv4Z1RH
 
+--- ejemplo comandos para el config ---
+cat kernel\kernel-plani.config > kernel\kernel.config
+cat memory\memoria-plani.config > memory\memoria.config
+cat cpu\cpu-plani.config > cpu\cpu-plani.config
+cat io\ESPERA-plani.config > io\ESPERA.config
+cat io\GENERICA-plani.config > io\GENERICA.config
+cat io\FS-plani.config > io\FS.config
+cat io\io_gen-plani.config > io\io_gen.config
+cat io\io_stdin-plani.config > io\io_stdin.config
+cat io\MONITOR-plani.config > io\MONITOR.config
+cat io\SLP1-plani.config > io\SLP1.config
+cat io\TECLADO-plani.config > io\TECLADO.config
+
 --- ramas de pruebas ---
 development
 prueba-planificacion
