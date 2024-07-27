@@ -1,6 +1,6 @@
-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
+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
 
-https://github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
+git clone https://github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
 
 git clone https://github.com/sisoputnfrba/so-deploy.git
 cd so-deploy
