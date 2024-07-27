@@ -23,3 +23,9 @@ prueba-memoria
 prueba-io
 prueba-fs
 prueba-edge
+
+
+--- si hay error (no deberia) de igual IP en las VM --
+sudo rm -f /etc/machine-id
+sudo dbus-uuidgen --ensure=/etc/machine-id
+sudo reboot
