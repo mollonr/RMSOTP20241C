@@ -6,7 +6,7 @@ git clone https://github.com/sisoputnfrba/so-deploy.git
 
 # Segundo repositorio (clonación con credenciales)
 echo "Clonando el repositorio tp-2024-1c-Grupo-1..."
-git clone https://mollonr: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@github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
+git clone https://github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
 
 echo "Clonación completada."
 
