@@ -1,27 +1,25 @@
-ghp_n4W5it3kHLClMlwX8JnNvQUHuUGiZv4Z1RH
+--- commons ---
+git clone https://github.com/sisoputnfrba/so-commons-library
+cd so-commons-library
+make debug
+make install
 
-git clone https://github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
-
+-- repo deploy --
 git clone https://github.com/sisoputnfrba/so-deploy.git
 cd so-deploy
+./deploy.sh tp-2022-1c-ejemplo
 
-PRUEBA_PLANIFICACION
-kernel-config:
-ALGORITMO_PLANIFICACION=FIFO
-QUANTUM=2750
-RECURSOS=[RECURSO]
-INSTANCIAS_RECURSOS=[1]
-GRADO_MULTIPROGRAMACION=10
+--- repo tp ---
+git clone https://github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
 
-cpu-config:
-CANTIDAD_ENTRADAS_TLB=32
-ALGORITMO_TLB=FIFO
+--- token ---
+ghp_n4W5it3kHLClMlwX8JnNvQUHuUGiZv4Z1RH
 
-Memoria-config:
-TAM_MEMORIA=1024
-TAM_PAGINA=32
-RETARDO_RESPUESTA=1000
-
-SLP1-config:
-TIPO_INTERFAZ=GENERICA
-TIEMPO_UNIDAD_TRABAJO=50
+--- ramas de pruebas ---
+development
+prueba-planificacion
+pruebas-deadlock
+prueba-memoria
+prueba-io
+prueba-fs
+prueba-edge
