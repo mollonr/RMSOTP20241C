@@ -1,0 +1,83 @@
+--- commons ---
+git clone https://github.com/sisoputnfrba/so-commons-library
+cd so-commons-library
+make debug
+make install
+
+-- repo deploy --
+git clone https://github.com/sisoputnfrba/so-deploy.git
+cd so-deploy
+./deploy.sh tp-2024-1c-Grupo-1
+
+--- repo tp ---
+git clone https://github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
+
+--- token ---
+ghp_n4W5it3kHLClMlwX8JnNvQUHuUGiZv4Z1RH
+
+--- Cambiar IP ---
+en cada modulo hay un archivo ip.config
+nano ip.config
+
+--- configs prueba PLANI ---
+cat kernel-plani.config > kernel.config
+cat memoria-plani.config > memoria.config
+cat cpu-plani.config > cpu.config
+SLP1-plani.config
+
+--- configs prueba DEADLOCK ---
+cat kernel-deadlock.config > kernel.config
+cat memoria-deadlock.config > memoria.config
+cat cpu-deadlock.config > cpu.config
+-- espera-deadlock.config
+
+--- configs prueba MEMORIA y TLB ---
+cat kernel-memoria.config > kernel.config
+cat memoria-memoria.config > memoria.config
+cat cpu-memoria.config > cpu.config
+-- io-gen-sleep-memoria.config
+
+--- configs prueba IO ---
+cat kernel-io.config > kernel.config
+cat memoria-io.config > memoria.config
+cat cpu-io.config > cpu.config
+-- generica-io.config
+-- MONITOR.config
+-- TECLADO.config
+
+--- configs prueba FileSystem ---
+cat kernel-deadlock.config > kernel.config
+cat memoria-deadlock.config > memoria.config
+cat cpu-fs.config > cpu.config
+-- MONITOR-FS.config
+-- TECLADO-FS.config
+-- FS.config
+
+--- configs prueba SALVATIONS EDGE ---
+cat kernel-salvation.config > kernel.config
+cat memoria-salvation.config > memoria.config
+cat cpu-salvation.config > cpu.config
+-- slp1-salvation.config
+-- espera-salvation.config
+-- teclado-salvation.config
+-- monitor-salvation.config
+-- generica-salvation.config
+
+
+
+
+
+--- ramas de pruebas ---
+development
+prueba-planificacion
+pruebas-deadlock
+prueba-memoria
+prueba-io
+prueba-fs
+prueba-edge
+
+
+--- si hay error (no deberia) de igual IP en las VM --
+sudo rm -f /etc/machine-id
+sudo dbus-uuidgen --ensure=/etc/machine-id
+sudo reboot
