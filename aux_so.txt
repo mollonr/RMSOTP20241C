@@ -23,7 +23,7 @@ nano ip.config
 cat kernel-plani.config > kernel.config
 cat memoria-plani.config > memoria.config
 cat cpu-plani.config > cpu.config
-SLP1-plani.config
+-- SLP1-plani.config
 
 --- configs prueba DEADLOCK ---
 cat kernel-deadlock.config > kernel.config
