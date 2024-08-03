@@ -4,13 +4,13 @@ cd so-commons-library
 make debug
 make install
 
+--- repo tp ---
+git clone https://github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
+
 -- repo deploy --
 git clone https://github.com/sisoputnfrba/so-deploy.git
 cd so-deploy
 ./deploy.sh tp-2024-1c-Grupo-1
-
---- repo tp ---
-git clone https://github.com/sisoputnfrba/tp-2024-1c-Grupo-1.git
 
 --- token ---
 ghp_n4W5it3kHLClMlwX8JnNvQUHuUGiZv4Z1RH
